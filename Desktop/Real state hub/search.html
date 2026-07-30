@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mahatobuilder</title>
+    <style>
+
+        *{
+         margin:0;
+         padding:0;
+         box-sizing:border-box;
+          }
+
+body{
+
+background:#f5f5f5;
+font-family:Poppins,sans-serif;
+padding:40px;
+
+}
+
+.container{
+
+max-width:1200px;
+margin:auto;
+display:flex;
+gap:50px;
+
+
+}
+
+.left{
+
+width:35%;
+
+}
+
+.small-title{
+
+letter-spacing:3px;
+font-size:12px;
+color:#888;
+margin-bottom:20px;
+
+}
+
+.left h1{
+
+font-size:58px;
+font-family:'Playfair Display',serif;
+line-height:1;
+margin-bottom:20px;
+
+}
+
+.description{
+
+font-size:14px;
+line-height:1.8;
+color:#666;
+margin-bottom:40px;
+
+}
+
+.featured-card{
+
+width:100%;
+height:320px;
+border-radius:10px;
+overflow:hidden;
+position:relative;
+
+}
+
+.featured-card img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+
+}
+
+.overlay{
+
+position:absolute;
+left:20px;
+bottom:20px;
+color:white;
+
+}
+
+.search-box{
+
+flex:1;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.section{
+
+margin:25px 0;
+
+}
+
+label{
+
+font-size:13px;
+font-weight:600;
+color:#444;
+
+}
+
+input[type=text]{
+
+width:100%;
+padding:15px;
+margin-top:12px;
+border:1px solid #ccc;
+border-radius:8px;
+outline:none;
+
+}
+
+.chips{
+
+margin-top:15px;
+
+}
+
+.chips span{
+
+display:inline-block;
+padding:8px 18px;
+border:1px solid #ccc;
+border-radius:30px;
+margin-right:10px;
+font-size:13px;
+cursor:pointer;
+
+}
+.chips span:hover{
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.price-head{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+
+}
+
+input[type=range]{
+
+width:100%;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+margin-top:20px;
+
+}
+
+.card{
+
+border:1px solid #ddd;
+padding:25px;
+border-radius:10px;
+text-align:center;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-3px);
+background:#ffd784;
+border:none;
+
+}
+
+/* .card.active{
+
+background:#ffd784;
+border:none;
+
+} */
+
+.card p{
+
+margin-top:10px;
+font-size:14px;
+
+}
+
+.amenities{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-top:20px;
+
+}
+
+.amenities label{
+
+font-size:14px;
+font-weight:400;
+
+}
+
+.buttons{
+
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+
+}
+
+button{
+
+padding:14px 30px;
+border-radius:40px;
+cursor:pointer;
+font-size:15px;
+
+}
+
+.reset{
+
+background:none;
+border:none;
+color:#666;
+
+}
+
+.save{
+
+background:white;
+border:1px solid #222;
+
+}
+
+.apply{
+
+background:#081d3c;
+color:white;
+border:none;
+
+}
+
+hr{
+
+border:none;
+height:1px;
+background:#eee;
+
+}
+
+/* @media(max-width:900px){
+
+.container{
+
+flex-direction:column;
+
+}
+
+.left{
+
+width:100%;
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.amenities{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.buttons{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+} */
+    </style>
+
+
+</head>
+<body>
+    <!-- <div class="search-overlay" style="height: 703px;width: 780px; background-color: rgb(236, 236, 236);">
+        <div class="overlay-content">
+            <div class="left-content">
+                <h6 style="font-family: Inter; color:#8192A7 ;letter-spacing: 1.5px;">FIND YOUR SANCTUARY</h6>
+                <span style="font-family: Playfair Display; font-style: bold; font-size: 45px; overflow-wrap: break-word; ">Refined Property Search</span>
+                <p>Our bespoke filters allow you to tailor your
+                   search with the precision of a master architect.
+                   Locate the rare and the remarkable across our
+                   exclusive global portfolio.</p>
+                <div class="img-cnt" style=": ;"></div>
+            </div>
+        </div>
+
+    </div> -->
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="left">
+
+        <p class="small-title">FIND YOUR SANCTUARY</p>
+
+        <h1>
+            Refined <br>
+            Property <br>
+            Search
+        </h1>
+
+        <p class="description">
+            Our bespoke filters allow you to tailor your search with the precision
+            of a master architect. Locate rare and remarkable homes across our
+            exclusive global portfolio.
+        </p>
+
+        <div class="featured-card">
+            <img style="background-image: url(property6.jpg);" alt="">
+            <div class="overlay">
+                <h4>Bel Air Estate</h4>
+                <p>FEATURED LISTING</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="search-box">
+
+        <div class="section">
+            <label>📍 LOCATION</label>
+
+            <input type="text" placeholder="Enter city, neighborhood, or zip code">
+
+            <div class="chips" >
+                <span>New York</span>
+                <span>London</span>
+                <span>Dubai</span>
+                <span>Paris</span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+
+            <div class="price-head">
+                <label>PRICE RANGE</label>
+                <span>NPR 500k — $10M+</span>
+            </div>
+
+            <input type="range">
+
+        </div>
+        
+
+        <hr>
+
+        <div class="section">
+
+            <label>PROPERTY TYPE</label>
+
+            <div class="cards">
+
+                <div class="card">
+                    🏢
+                    <p>Apartment</p>
+                </div>
+
+                <div class="card">
+                    🏠
+                    <p>Villa / House</p>
+                </div>
+
+                <div class="card">
+                    🏘
+                    <p>Penthouse</p>
+                </div>
+
+                <div class="card">
+                    🏛
+                    <p>Mansion</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="section">
+
+            <label>ESSENTIAL AMENITIES</label>
+
+            <div class="amenities">
+
+                <label><input type="checkbox"> Infinity Pool</label>
+                <label><input type="checkbox" checked> Private Cinema</label>
+                <label><input type="checkbox"> Wine Cellar</label>
+                <label><input type="checkbox"> Smart Home</label>
+                <label><input type="checkbox"> Helipad Access</label>
+                <label><input type="checkbox" checked> 24/7 Concierge</label>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="buttons">
+
+            <button class="reset">Reset All</button>
+
+            <button class="save">Save Search</button>
+
+            <button class="apply">Apply Filters →</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mahatobuilder</title>
+    <link rel="stylesheet" href="properties.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<!-- 
+<header class="navbar">
+
+    <div class="nav-left">
+        <i class="fa-solid fa-bars"></i>
+        <h2>LUXE REALTY</h2>
+    </div>
+
+    <nav>
+
+        <a href="#">Properties</a>
+        <a href="#">Concierge</a>
+        <a href="#">Market Reports</a>
+        <a href="#">Sell</a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <img src="https://i.pravatar.cc/40" alt="">
+
+    </div>
+
+</header> -->
+
+<!-- ================= MAIN ================= -->
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="filter-title">
+
+            <h2>All Filters</h2>
+
+            <span>Reset</span>
+
+        </div>
+
+        <!-- Price -->
+
+        <div class="filter-box">
+
+            <h4>PRICE RANGE</h4>
+
+            <div class="price">
+
+                <span>$500k</span>
+
+                <span>$25M+</span>
+
+            </div>
+
+        </div>
+
+        <!-- Property -->
+
+        <div class="filter-box">
+
+            <h4>PROPERTY TYPE</h4>
+
+            <label><input type="checkbox" checked> Modern Villa</label>
+
+            <label><input type="checkbox"> Penthouses</label>
+
+            <label><input type="checkbox"> Estates</label>
+
+        </div>
+
+        <!-- Bedrooms -->
+
+        <div class="filter-box">
+
+            <h4>BEDROOMS</h4>
+
+            <div class="btn-group">
+
+                <button>Any</button>
+
+                <button class="active">3+</button>
+
+                <button>4+</button>
+
+                <button>5+</button>
+
+            </div>
+
+        </div>
+
+        <!-- Amenities -->
+
+        <div class="filter-box">
+
+            <h4>AMENITIES</h4>
+
+            <label><input type="checkbox"> Pool</label>
+
+            <label><input type="checkbox"> Gym</label>
+
+            <label><input type="checkbox"> Wine Cellar</label>
+
+            <label><input type="checkbox" checked> Concierge</label>
+
+        </div>
+
+        <button class="show-btn">
+
+            SHOW 142 RESULTS
+
+        </button>
+
+    </aside>
+
+    <!-- Content -->
+
+    <main class="content">
+
+        <div class="heading">
+
+            <div>
+
+                <h1>Luxury Residences</h1>
+
+                <p>Showing premium properties in curated global locations.</p>
+
+            </div>
+
+            <div class="sort-btn">
+
+                <button class="active">Recommended</button>
+
+                <button>Newest</button>
+
+                <button>Price High-Low</button>
+
+            </div>
+
+        </div>
+
+        <!-- Property Grid -->
+
+        <section class="cards">
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="image">
+
+                   <a href="./propertiesdetails.html"><img src="property1.jpg"></a>
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                        <span class="new">NEW</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>The Obsidian Villa</h2>
+
+                        <span>NPR 12,450,000</span>
+
+                    </div>
+
+                    <p>Bel Air, Los Angeles</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+
+                        <span>8,200 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="image">
+
+                    <img src="property3.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Azure Coast Estate</h2>
+
+                        <span>$8,900,000</span>
+
+                    </div>
+
+                    <p>French Riviera</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>4 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>5 Baths</span>
+
+                        <span>5,400 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="image">
+
+                    <img src="property4.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Skyline Penthouse</h2>
+
+                        <span>$18,200,000</span>
+
+                    </div>
+
+                    <p>Chelsea, New York</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>3 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>4 Baths</span>
+
+                        <span>3,800 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="image">
+
+                    <img src="property5.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Pinecrest Lodge</h2>
+
+                        <span>$6,750,000</span>
+
+                    </div>
+
+                    <p>Aspen, Colorado</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>6 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>7 Baths</span>
+
+                        <span>9,100 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="image">
+
+                    <img src="property6.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                        <span class="new">OFF-MARKET</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>The Monolith House</h2>
+
+                        <span>$4,200,000</span>
+
+                    </div>
+
+                    <p>Austin, Texas</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>3 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>3 Baths</span>
+
+                        <span>3,200 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="card">
+
+                <div class="image">
+
+                    <img src="property4.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Somerset Manor</h2>
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="card">
+
+                <div class="image">
+
+                    <img src="property6.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Monashtd Manor</h2>
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="card">
+
+                <div class="image">
+
+                    <img src="property3.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>knowns dkhs </h2>
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="card">
+
+                <div class="image">
+
+                    <img src="property1.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Somerset Manor</h2>
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="card">
+
+                <div class="image">
+
+                    <img src="property4.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Manor Kizatan</h2>
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="card">
+
+                <div class="image">
+
+                    <img src="property1.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Somerset Manor</h2>1
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="card">
+
+                <div class="image">
+
+                    <img src="property4.jpg">
+
+                    <div class="badge">
+
+                        <span>VERIFIED</span>
+
+                    </div>
+
+                    <div class="heart">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="card-body">
+
+                    <div class="title-price">
+
+                        <h2>Somerset seats</h2>
+
+                        <span>$15,800,000</span>
+
+                    </div>
+
+                    <p>Cotswolds, UK</p>
+
+                    <div class="info">
+
+                        <span><i class="fa-solid fa-bed"></i>8 Beds</span>
+
+                        <span><i class="fa-solid fa-bath"></i>10 Baths</span>
+
+                        <span>12,500 sqft</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Pagination -->
+
+        <div class="pagination">
+
+            <button><i class="fa-solid fa-angle-left"></i></button>
+
+            <button class="current">1</button>
+
+            <button><a href="">2</a></button>
+
+            <button><a href="">3</a></button>
+
+            <button>...</button>
+
+            <button><a href="">12</a></button>
+
+            <button><i class="fa-solid fa-angle-right"></i></button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<!-- Floating Button -->
+
+<div class="map-btn">
+
+    <i class="fa-regular fa-map"></i>
+
+</div>
+
+</body>
+</html>
